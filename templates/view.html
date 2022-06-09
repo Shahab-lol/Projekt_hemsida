@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Posts page{% endblock %}
+{% block content %}
+    {% for item in values %}
+        <p>{{item.name}}</p>
+    {% endfor %}
+{% endblock %}
+
+#extendar navbaren, en forloop som visar (inputen som sparats på databasen) på /view
